@@ -346,35 +346,35 @@ public class ResourceManager : MonoBehaviour
 	public void SetPlayer ()
 	{
 		spritePlayerList = new Dictionary<int, Sprite> (){
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_right_0")},
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_right_1")},
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_right_2")},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_left_0")},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_left_1")},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_left_2")},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_top_0")},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_top_1")},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_top_2")},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_bottom_0")},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_bottom_1")},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_bottom_2")},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_right_0")	},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_right_1")	},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_right_2")	},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_left_0")	},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_left_1")	},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_left_2")	},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_top_0")	},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_top_1")	},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_top_2")	},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_bottom_0")	},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_bottom_1")	},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_bottom_2")	},
 			
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_spin_left_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_spin_left_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_spin_left_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_spin_top_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_spin_top_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_spin_top_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_spin_bottom_0")},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_spin_bottom_0")},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_spin_bottom_0")},
 		};
 
-		spriteUpperPlayer = Resources.Load<Sprite> ("Textures/upper_player0");
-		spritePlayerWeapon = Resources.Load<Sprite> ("Textures/player0_weapon");
+		spriteUpperPlayer = Resources.Load<Sprite> ("Textures/upper_player");
+		spritePlayerWeapon = Resources.Load<Sprite> ("Textures/player_weapon");
 	}
 
 

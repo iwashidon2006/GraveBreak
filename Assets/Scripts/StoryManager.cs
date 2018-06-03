@@ -328,7 +328,7 @@ public class StoryManager : MonoBehaviour
 		goPlayerNotice.SetActive (false);
 		goBossNotice.SetActive (false);
 
-		SetPlayer (MainManager.Instance.selectCharacter);
+		SetPlayer ();
 
 		spriteBossList = new Dictionary<int, Sprite> (){
 			{(int)StoryPerson.Compass.Right	* ResourceManager.SPRITE_MULTI_COMPASS + StoryPerson.IMAGE_0,	spriteBossCompassRight0	},
@@ -699,15 +699,15 @@ public class StoryManager : MonoBehaviour
 
 
 
-	public void SetPlayer (int charaId)
+	public void SetPlayer ()
 	{
 		spritePlayerList = new Dictionary<int, Sprite> (){
-			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_0",	charaId))},
-			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_1",	charaId))},
-			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_2",	charaId))},
-			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_0",		charaId))},
-			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_1",		charaId))},
-			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_2",		charaId))},
+			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_right_0")	},
+			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_right_1")	},
+			{0					+ (int)Player.Compass.Right		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_right_2")	},
+			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player_left_0")	},
+			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player_left_1")	},
+			{0					+ (int)Player.Compass.Left		* ResourceManager.SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player_left_2")	},
 		};
 	}
 
