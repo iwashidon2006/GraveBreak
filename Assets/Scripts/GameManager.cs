@@ -1023,7 +1023,7 @@ public class GameManager : MonoBehaviour
 		ResourceManager.Instance.SetItem ();
 		ResourceManager.Instance.SetBonus ();
 		ResourceManager.Instance.SetAllEnemy ();
-		ResourceManager.Instance.SetPlayer (MainManager.Instance.selectCharacter);
+		ResourceManager.Instance.SetPlayer ();
 		transform.Find ("UI/Information/Face").GetComponent<Image>().sprite = ResourceManager.Instance.spriteUpperPlayer;
 		SetWeapon ();
 

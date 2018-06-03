@@ -343,38 +343,38 @@ public class ResourceManager : MonoBehaviour
 
 
 
-	public void SetPlayer (int charaId)
+	public void SetPlayer ()
 	{
 		spritePlayerList = new Dictionary<int, Sprite> (){
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_0",	charaId))},
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_1",	charaId))},
-			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_right_2",	charaId))},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_0",		charaId))},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_1",		charaId))},
-			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_left_2",		charaId))},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_top_0",		charaId))},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_top_1",		charaId))},
-			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_top_2",		charaId))},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_bottom_0",	charaId))},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_bottom_1",	charaId))},
-			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_bottom_2",	charaId))},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_right_0")},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_right_1")},
+			{0					+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_right_2")},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_left_0")},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_left_1")},
+			{0					+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_left_2")},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_top_0")},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_top_1")},
+			{0					+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_top_2")},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_bottom_0")},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_bottom_1")},
+			{0					+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_bottom_2")},
 			
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_right_0",	charaId))},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_right_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_right_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_left_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_left_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_left_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_top_0",		charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_top_0",		charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_top_0",		charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_bottom_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_bottom_0",	charaId))	},
-			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> (string.Format ("Textures/player{0}_spin_bottom_0",	charaId))	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Right		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_right_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Left		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_left_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Top		* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_top_0")		},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_0,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_1,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
+			{SPRITE_MULTI_TYPE	+ (int)Player.Compass.Bottom	* SPRITE_MULTI_COMPASS + Player.IMAGE_2,	Resources.Load<Sprite> ("Textures/player0_spin_bottom_0")	},
 		};
 
-		spriteUpperPlayer = Resources.Load<Sprite> (string.Format ("Textures/upper_player{0}",	charaId));
-		spritePlayerWeapon = Resources.Load<Sprite> (string.Format ("Textures/player{0}_weapon", charaId));
+		spriteUpperPlayer = Resources.Load<Sprite> ("Textures/upper_player0");
+		spritePlayerWeapon = Resources.Load<Sprite> ("Textures/player0_weapon");
 	}
 
 
